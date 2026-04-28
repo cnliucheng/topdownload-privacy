@@ -1,154 +1,254 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TopDownload Extension Privacy Policy</title>
+  <title>TopDownload 隐私政策</title>
+  <meta name="description" content="TopDownload 桌面应用隐私政策" />
   <style>
     :root {
-      --bg: #0b1020;
-      --card: #121a30;
-      --text: #eaf0ff;
-      --muted: #a7b6dd;
-      --accent: #4da3ff;
-      --line: #26345f;
+      --bg: #f4f8f7;
+      --paper: #ffffff;
+      --ink: #172126;
+      --sub: #4a5963;
+      --line: #d7e1e6;
+      --brand: #0d7a6f;
+      --brand-soft: #e3f4f1;
+      --accent: #0b5ea7;
+      --radius: 18px;
+      --shadow: 0 16px 40px rgba(10, 52, 81, 0.08);
     }
+
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: radial-gradient(1100px 600px at 20% -10%, #1a2f66, transparent), var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-      padding: 28px 16px 56px;
+      color: var(--ink);
+      background:
+        radial-gradient(800px 420px at 110% -10%, #d5f1ff 0, transparent 55%),
+        radial-gradient(920px 480px at -10% -18%, #dff8f0 0, transparent 54%),
+        var(--bg);
+      font-family: "Avenir Next", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+      padding: 32px 14px 64px;
     }
-    .wrap {
-      max-width: 920px;
+
+    .container {
+      max-width: 980px;
       margin: 0 auto;
-      background: color-mix(in oklab, var(--card) 92%, black);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 34px 30px 26px;
+      background: linear-gradient(130deg, #f6fffd 0%, #f3fbff 58%, #eef8ff 100%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--brand);
+      background: var(--brand-soft);
+      border: 1px solid #bfe7df;
+      border-radius: 999px;
+      padding: 4px 10px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.2;
+    }
+
+    .meta {
+      margin-top: 10px;
+      font-size: 14px;
+      color: var(--sub);
+    }
+
+    main {
+      padding: 28px 30px 34px;
+    }
+
+    .card {
       border: 1px solid var(--line);
       border-radius: 14px;
-      padding: 24px;
-      box-shadow: 0 12px 36px rgba(0, 0, 0, .35);
+      padding: 18px 18px 14px;
+      margin-bottom: 14px;
+      background: #fff;
     }
-    h1, h2 { line-height: 1.3; margin: 0 0 12px; }
-    h1 { font-size: 28px; }
-    h2 { margin-top: 24px; font-size: 20px; color: #d8e5ff; }
-    p, li { color: var(--muted); }
-    .meta {
-      margin: 0 0 14px;
-      color: #c9d8ff;
-      font-size: 14px;
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      color: #0f2c40;
     }
-    .lang {
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px dashed var(--line);
+
+    p, li {
+      margin: 0 0 9px;
+      color: var(--sub);
+      font-size: 15px;
     }
-    a { color: var(--accent); text-decoration: none; }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
     a:hover { text-decoration: underline; }
+
     code {
-      background: #0d152d;
-      border: 1px solid #21325d;
+      background: #f4f8fb;
+      border: 1px solid #d9e4ee;
       border-radius: 6px;
       padding: 1px 6px;
-      color: #dff0ff;
+      color: #1b3952;
+      font-size: 0.95em;
+    }
+
+    .note {
+      border-left: 4px solid var(--brand);
+      background: #f2fbf9;
+      padding: 12px 14px;
+      border-radius: 10px;
+      margin-bottom: 16px;
+      color: #31545f;
+      font-size: 14px;
+    }
+
+    .lang {
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px dashed var(--line);
+    }
+
+    .footer {
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+      color: #60737e;
+    }
+
+    @media (max-width: 640px) {
+      .hero { padding: 24px 18px 18px; }
+      main { padding: 20px 18px 22px; }
+      .card { padding: 14px 14px 10px; }
     }
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <h1>TopDownload Extension Privacy Policy</h1>
-    <p class="meta">Effective date: April 22, 2026</p>
+  <article class="container">
+    <header class="hero">
+      <div class="badge">Privacy Policy</div>
+      <h1>TopDownload 隐私政策</h1>
+      <p class="meta">
+        生效日期：2026 年 4 月 28 日<br />
+        适用产品：TopDownload macOS 桌面应用
+      </p>
+    </header>
 
-    <p>
-      This privacy policy applies to the browser extension <strong>TopDownload Link Downloader</strong>
-      ("the Extension").
-    </p>
+    <main>
+      <p class="note">
+        本页面为 App 提交场景准备。请在发布前将文中的联系方式替换为你的真实信息。
+      </p>
 
-    <h2>1. Data Collection</h2>
-    <p>
-      The Extension does <strong>not</strong> collect, store, or sell personal data such as name, email,
-      account credentials, or browsing history on remote servers.
-    </p>
+      <section class="card">
+        <h2>1. 我们收集的信息</h2>
+        <p>TopDownload 主要在用户设备本地运行。默认情况下，我们不会在远程服务器收集或存储您的个人身份信息（例如姓名、邮箱、手机号）。</p>
+        <p>应用可能在本地设备保存以下信息以实现功能：</p>
+        <ul>
+          <li>您添加的下载链接（URL）与任务元数据（文件名、大小、状态、下载进度）。</li>
+          <li>您的本地设置（默认下载目录、线程数、界面主题、语言等）。</li>
+          <li>您主动创建的收藏下载地址。</li>
+        </ul>
+      </section>
 
-    <h2>2. How the Extension Works</h2>
-    <p>
-      The Extension helps users send downloadable links from the browser to the local TopDownload desktop app
-      via the custom protocol <code>topdownload://</code>.
-    </p>
+      <section class="card">
+        <h2>2. 信息的使用目的</h2>
+        <ul>
+          <li>执行和管理下载任务（暂停、继续、删除、重试、完成通知）。</li>
+          <li>在应用内展示下载进度、速度、剩余时间等状态信息。</li>
+          <li>保存您的偏好设置，提升后续使用体验。</li>
+        </ul>
+      </section>
 
-    <h2>3. Permissions Usage</h2>
-    <ul>
-      <li><code>contextMenus</code>: Adds the right-click menu item for links.</li>
-      <li><code>tabs</code>: Opens the <code>topdownload://</code> link in a browser tab to trigger the local app.</li>
-      <li><code>downloads</code>: Detects browser download creation and optionally redirects matched downloads to TopDownload.</li>
-      <li><code>&lt;all_urls&gt;</code> host permission: Allows detection of downloadable links on visited pages.</li>
-    </ul>
+      <section class="card">
+        <h2>3. 权限与系统能力说明</h2>
+        <ul>
+          <li>文件读写权限：用于将下载文件保存到您指定的本地目录。</li>
+          <li>网络访问权限：用于连接您提供的下载地址并传输文件数据。</li>
+          <li>通知权限（如启用）：用于提示下载完成或任务状态变化。</li>
+          <li>URL Scheme：应用支持 <code>topdownload://download?url=...</code> 以接收外部链接并创建下载任务。</li>
+        </ul>
+      </section>
 
-    <h2>4. Data Sharing</h2>
-    <p>
-      The Extension does not transfer user data to third-party analytics, advertising, or cloud processing services.
-    </p>
+      <section class="card">
+        <h2>4. 数据共享与第三方</h2>
+        <p>我们不会将您的个人信息出售给第三方，也不会将下载任务数据用于广告定向。</p>
+        <p>除非为履行法律义务或响应合法请求，我们不会向第三方披露您的本地数据。</p>
+      </section>
 
-    <h2>5. Data Storage</h2>
-    <p>
-      The Extension does not maintain a remote database. Any handling occurs locally in the browser and the local
-      TopDownload app environment.
-    </p>
+      <section class="card">
+        <h2>5. 数据存储与保留</h2>
+        <p>TopDownload 的下载任务记录与设置通常保存在您的本地设备。您可通过删除任务、清理应用数据或卸载应用来移除相关信息。</p>
+      </section>
 
-    <h2>6. Security</h2>
-    <p>
-      The Extension follows the browser extension security model and only requests permissions necessary for download
-      handoff functionality.
-    </p>
+      <section class="card">
+        <h2>6. 数据安全</h2>
+        <p>我们采取合理措施保护本地数据安全，包括最小化数据处理范围、仅在实现功能所需的上下文中访问数据。</p>
+      </section>
 
-    <h2>7. Changes to This Policy</h2>
-    <p>
-      We may update this policy from time to time. The updated version will be posted at the same URL with an updated
-      effective date.
-    </p>
+      <section class="card">
+        <h2>7. 儿童隐私</h2>
+        <p>本应用面向一般用户，不以 14 周岁以下儿童为目标用户群体。如您认为儿童在未经监护人同意情况下提交了个人信息，请联系我们处理。</p>
+      </section>
 
-    <h2>8. Contact</h2>
-    <p>
-      Contact email: <a href="mailto:your-email@example.com">your-email@example.com</a>
-    </p>
+      <section class="card">
+        <h2>8. 隐私政策更新</h2>
+        <p>我们可能根据功能调整或法律法规变化更新本政策。更新后版本将发布在同一页面并更新“生效日期”。</p>
+      </section>
 
-    <section class="lang" lang="zh-CN">
-      <h1>TopDownload 扩展隐私政策</h1>
-      <p class="meta">生效日期：2026 年 4 月 22 日</p>
+      <section class="card">
+        <h2>9. 联系我们</h2>
+        <p>如对本隐私政策有疑问，请联系：</p>
+        <p>
+          邮箱：<a href="mailto:brokenway@163.com">brokenway@163.com</a><br />
+          开发者名称：<strong>liu cheng / 刘承</strong>
+          发布日期：2026年5月1日
+        </p>
+      </section>
 
-      <p>本隐私政策适用于浏览器扩展 <strong>TopDownload 链接下载</strong>（以下简称“本扩展”）。</p>
+      <section class="lang" lang="en">
+        <h2>English Summary (for review teams)</h2>
+        <p>
+          TopDownload is a local-first desktop download manager. It does not sell personal data and, by default,
+          does not collect personal identity data on remote servers. Download links, task metadata, and settings
+          are stored locally on the user's device for core functionality only.
+        </p>
+        <p>
+          If your app store listing requires a full English legal version, you can expand this section into
+          a complete English policy matching the Chinese clauses above.
+        </p>
+      </section>
 
-      <h2>1. 数据收集</h2>
-      <p>本扩展<strong>不会</strong>收集、存储或出售用户个人身份信息（如姓名、邮箱、账号密码）或上传完整浏览历史到远程服务器。</p>
-
-      <h2>2. 功能说明</h2>
-      <p>本扩展用于将网页中的下载链接通过 <code>topdownload://</code> 协议发送给本地 TopDownload 桌面应用进行下载处理。</p>
-
-      <h2>3. 权限用途</h2>
-      <ul>
-        <li><code>contextMenus</code>：在网页链接右键菜单中增加“使用 TopDownload 下载”。</li>
-        <li><code>tabs</code>：在新标签页打开 <code>topdownload://</code> 链接以唤起本地应用。</li>
-        <li><code>downloads</code>：检测浏览器下载创建事件，并按规则转交给 TopDownload。</li>
-        <li><code>&lt;all_urls&gt;</code>：用于识别网页中的可下载链接。</li>
-      </ul>
-
-      <h2>4. 数据共享</h2>
-      <p>本扩展不会将用户数据提供给广告、统计分析或其他第三方服务。</p>
-
-      <h2>5. 数据存储</h2>
-      <p>本扩展不建立远程数据库。相关处理仅在用户本地浏览器与本地 TopDownload 应用环境中进行。</p>
-
-      <h2>6. 安全措施</h2>
-      <p>本扩展遵循浏览器扩展安全模型，仅申请实现下载接管所必需的权限。</p>
-
-      <h2>7. 政策更新</h2>
-      <p>如有更新，我们会在本页面发布新版本并更新生效日期。</p>
-
-      <h2>8. 联系方式</h2>
-      <p>联系邮箱：<a href="mailto:your-email@example.com">your-email@example.com</a></p>
-    </section>
-  </main>
+      <p class="footer">
+        Copyright © 2026 TopDownload. All rights reserved.
+      </p>
+    </main>
+  </article>
 </body>
 </html>
